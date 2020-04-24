@@ -12,13 +12,10 @@
 #include <vector>
 #include <utility>
 #include <string>
+#include <functional>
 #include "./base.h"
 #include "./data.h"
 #include "./tree_model.h"
-
-#ifdef _MSC_VER
-#include <functional>
-#endif
 
 namespace xgboost {
 /*!

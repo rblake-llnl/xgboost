@@ -18,7 +18,7 @@ def find_lib_path():
     lib_path: list(string)
        List of all found library path to xgboost
     """
-    curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
+    curr_path = os.path.dirname(os.path.expanduser(__file__))
     # make pythonpack hack: copy this directory one level upper for setup.py
     dll_path = [curr_path, os.path.join(curr_path, '../../lib/'),
                 os.path.join(curr_path, './lib/')]
